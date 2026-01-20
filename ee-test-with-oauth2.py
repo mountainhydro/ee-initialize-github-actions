@@ -3,7 +3,7 @@ import json
 import os
 import google.oauth2.credentials
 
-stored = json.loads(os.getenv("GEE_API_KEY"))
+stored = json.loads(os.getenv("EARTHENGINE_TOKEN"))
 credentials = google.oauth2.credentials.Credentials(
     None,
     token_uri="https://oauth2.googleapis.com/token",
